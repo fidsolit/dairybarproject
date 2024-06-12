@@ -2,8 +2,8 @@
 session_start(); // Ensure session is started
 require_once '../posBackend/checkIfLoggedIn.php';
 ?>
-<?php 
-include '../inc/dashHeader.php'; 
+<?php
+include '../inc/dashHeader.php';
 require_once '../config.php';
 $currentMonthStart = date('Y-m-01');
 $currentMonthEnd = date('Y-m-t');
@@ -15,15 +15,15 @@ $currentMonth = date('Y-m');
 ?>
 
 <div class="row">
-        <div class="col-md-10 order-md-2" style="margin-top: 3rem; margin-left: 14rem;">
-            <div class="container-fluid pt-5  row">
+    <div class="col-md-10 order-md-2" style="margin-top: 3rem; margin-left: 14rem;">
+        <div class="container-fluid pt-5  row">
             <h3>Most Purchased Items</h3>
             <h3>(<?php echo $currentMonth; ?>)</h3>
 
             <!-- Sorting form and button -->
-             <div class="col d-flex justify-content-end">
-                 
-                 <!-- 
+            <div class="col d-flex justify-content-end">
+
+                <!-- 
                 <a href="?sortOrder=desc" class=" btn btn-primary">Most</a>
 
                 <a href="?sortOrder=asc" class=" btn btn-primary">Least</a>
@@ -100,7 +100,7 @@ $currentMonth = date('Y-m');
 <!-- Load Google Charts library -->
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script>
-    google.charts.load('current', {'packages': ['corechart']});
+    google.charts.load('current', { 'packages': ['corechart'] });
     google.charts.setOnLoadCallback(mostPurchasedChart);
     google.charts.setOnLoadCallback(mostPurchasedDrinksChart);
     google.charts.setOnLoadCallback(mostPurchasedMainChart);

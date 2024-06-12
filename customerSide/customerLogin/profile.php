@@ -35,9 +35,11 @@ $conn->close();
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>User Profile</title>
 </head>
+
 <body>
     <h2>User Profile</h2>
     <p>Welcome, <?php echo $row['member_name']; ?>!</p>
@@ -47,4 +49,5 @@ $conn->close();
     <p>Register Date: <?php echo $row['register_date']; ?></p>
     <a href="logout.php">Logout</a>
 </body>
+
 </html>
